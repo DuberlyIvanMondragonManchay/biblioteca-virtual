@@ -1,0 +1,8 @@
+body{
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.664),
+        rgba(0, 0, 0, 0.635)
+    ), url('../img/fondo.jpg') !important;
+
+}
