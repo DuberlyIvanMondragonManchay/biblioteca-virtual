@@ -26,6 +26,7 @@ include('../DAO/AutorDAO.php');
                         <li class="list-group-item"> <b>Editorial: </b> <?php echo $libro['editorial']?></li>
                         <li class="list-group-item"> <b>Autor: </b> <?php echo $libro['nombre']?> <a href="/biblioteca_duberly/autores/read.php">+info</a></li>
                         <li class="list-group-item"><b>Especialidad: </b> <?php echo $libro['especialidad']?></li>
+                        <li class="list-group-item"><b>Año: </b> <?php echo $libro['ano']?></li>
                     </ul>
                     <div class="card-body">
                         <a target="_blank" href=<?php echo $libro['url']?> class="btn btn-info card-link">Leer libro</a>

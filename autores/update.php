@@ -3,21 +3,17 @@ include('../db.php');
 include('../DAO/AutorDAO.php');
 $autor=new AutorDAO();
 
-if (isset($_GET['libro_id'])){
+if (isset($_GET['autor_id'])){
     // SELECCIONAR LOS CAMPOS EN BASE AL ID QUE RECIBIMOS
 
-    $result_libros = $libro->getLibro($_GET['libro_id']);
+    $result_autores = $autor->getAutor($_GET['autor_id']);
     
-    if (mysqli_num_rows($result_libros) >=1){
+    if (mysqli_num_rows($result_autores) >=1){
         
-        while($libro = mysqli_fetch_array($result_libros)) {
-            $imagen=$libro['imagen'];
-            $titulo=$libro['titulo'];
-            $url=$libro['url'];
-            $especialidad=$libro['especialidad'];
-            $ano=$libro['ano'];
-            $editorial=$libro['editorial'];
-            $nombre=$libro['nombre'];
+        while($autor = mysqli_fetch_array($result_autores)) {
+           $nombre=$autor['nombre'];
+           $ape_paterno=$autor['ape_paterno'];
+           $ape_materno=$autor['ape_materno'];
         }
     }
 }

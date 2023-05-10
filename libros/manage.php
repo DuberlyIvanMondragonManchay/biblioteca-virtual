@@ -13,7 +13,7 @@ include('../DAO/LibroDAO.php')
     <?php session_unset();}?>
     
     <div class="col">            
-            <h3 class="">Libros</h3>
+            <h3 class="">Administrar Libros</h3>
             <table class="table mt-3">
                 <thead class="table">
                     <tr>
