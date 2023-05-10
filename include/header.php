@@ -11,10 +11,6 @@
     <!-- FILE CSS -->
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
-<body style="height: 100%; min-width: 550px;background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.664),
-        rgba(0, 0, 0, 0.635)
-    ), url('../img/fondo.jpg');">
+<body class="bg-white">
 
 <?php include('navbar.php')?>
